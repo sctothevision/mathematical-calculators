@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Математический калькулятор</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Математический калькулятор</h2>
+        
+        <!-- Корни квадратного уравнения -->
+        <div>
+            <h3>Корни квадратного уравнения</h3>
+            <input type="number" id="a-coef" placeholder="Коэффициент a">
+            <input type="number" id="b-coef" placeholder="Коэффициент b">
+            <input type="number" id="c-coef" placeholder="Коэффициент c">
+            <div id="quadratic-roots-result" class="result"></div>
+            <button onclick="calculateQuadraticRoots()">Найти корни</button>
+        </div>
+        
+        <!-- Проверка на теорему Пифагора -->
+        <div>
+          <h3>Теорема Пифагора</h3>
+          <input type="number" id="side1" placeholder="Число 1">
+          <input type="number" id="side2" placeholder="Число 2">
+          <input type="number" id="side3" placeholder="Число 3">
+          <button onclick="checkPythagorean()">Проверить</button>
+          <div id="pythagorean-result" class="result"></div>
+        </div>
+        
+        <!-- Общие делители -->
+        <div>
+          <h3>Общие делители</h3>
+          <input type="number" id="number1" placeholder="Число 1">
+          <input type="number" id="number2" placeholder="Число 2">
+          <button onclick="findDivisors()">Найти делители</button>
+          <div id="divisors-result" class="result"></div>
+        </div>
+        
+        <!-- Наибольший общий делитель -->
+        <div>
+          <h3>Наибольший общий делитель</h3>
+          <input type="number" id="gcd-number1" placeholder="Число 1">
+          <input type="number" id="gcd-number2" placeholder="Число 2">
+          <button onclick="calculateGCD()">Найти НОД</button>
+          <div id="gcd-result" class="result"></div>
+        </div>
+        
+        <!-- Наименьшее общее кратное -->
+        <div>
+          <h3>Наименьшее общее кратное</h3>
+          <input type="number" id="lcm-number1" placeholder="Число 1">
+          <input type="number" id="lcm-number2" placeholder="Число 2">
+          <button onclick="calculateLCM()">Найти НОК</button>
+          <div id="lcm-result" class="result"></div>
+        </div>
+        
+      </div>
+    <script src="script.js"></script>
+</body>
+</html>
